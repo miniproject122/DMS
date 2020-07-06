@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+<title>Transparent login form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+     <body>
+         <form name"myform" action="loginform.php" method="post" onsubmit="return validate()">         <div class="login-box">
+         <img src= "neha1.jpg" class="avatar">
+             <h1>Login</h1>
+             <form>
+             <p>Username</p>
+             <input type="text" name="username" placeholder="Enter Username">
+                 <p>Password</p>
+             <input type="password" name="password" placeholder="Enter password">
+            <input type="submit" name="submit" value="Login">
+                 <a href="a">Forget Password</a>
+         </div>
+             </form>
+    </body>
+</html>
+<script type="text/javascript">
+function validate()
+    {
+        if (document.myform.username.value="")
+            {
+                alert("please enter the username");
+                document.myform.username.focus();
+                return false;
+            }
+        if (document.myform.password.value="")
+            {
+                alert("please enter the password");
+                document.myform.password.focus();
+                return false;
+            }
+        return true;
+    }
+</script>

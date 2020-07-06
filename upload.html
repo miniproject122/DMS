@@ -1,0 +1,111 @@
+<html>    
+    <head>
+        <script>
+            function validateForm(){
+                var image = document.getElementById("image").value;
+                var name = document.getElementById("name").value;
+                if (image =='')
+                {
+                    return false;
+                }
+                if(name =='')
+                {
+                    return false;
+                } 
+                else 
+                {
+                    return true;
+                } 
+                return false;
+            }
+        </script>
+    </head>
+
+
+<style>
+  p {
+    color: white;
+  }
+  
+  .paragraph1 {
+    font-size: 25px;
+  }
+  .paragraph2 {
+    font-size: 25px;
+  }
+  .paragraph3 {
+    font-size: 25px;
+  }
+  .paragraph4 {
+    font-size: 25px;
+  }
+</style>
+
+    <body>
+        <form method="post" action="dashboard.html" enctype="multipart/form-data">
+            <center><p><font size="16"><font color="black"> Documents </p></center>
+           <center><p class="paragraph1"><font color="blue">10th Marksheet    <input type="file" accept="image/*" name="image" id="image" /></font>
+            <input type="submit" value='Save' onclick="return validateForm()"/></p>
+            <center> <p class="paragraph2"><font color="blue">12th Marksheet    <input type="file" accept="image/*" name="image" id="image" />
+            <input type="submit" value='Save' onclick="return validateForm()"/></p>
+             <center><p class="paragraph3"><font color="blue">Migration Certificate <input type="file" accept="image/*" name="image" id="image" />
+            <input type="submit" value='Save' onclick="return validateForm()"/></p>
+             <center><p class="paragraph3"><font color="blue">Character Certificate<input type="file" accept="image/*" name="image" id="image" />
+            <input type="submit" value='Save' onclick="return validateForm()"/></p>
+             <center><p class="paragraph4"><font color="blue">Transfer Certificate<input type="file" accept="image/*" name="image" id="image" />
+            <input type="submit" value='Save' onclick="return validateForm()"/></p></center>
+
+
+
+
+
+<style>
+       <div style="background-image:url(dp.jpg);">
+          </div> 
+    
+        .background{
+            height:850px;
+           
+            border :2px solid black;
+            position: relative;
+        
+            
+        }
+        .background .bg{
+        background: url(dp.jpg) repeat;
+         opacity:.5;
+           filter: alpha(opacity=20);
+             position: absolute;
+        z-index: -1;
+          top: 0;
+            bottom: 0;
+          left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        }
+        }
+     
+    </style>
+    </head>
+<body>
+ 
+        <div class="background">
+           <div class="bg"></div>
+        <div align="center" style="opacity:1.0;" >
+            <form method="post" action="validate.php">
+                <table cellpadding="20" cellspacing="1" border="0" width="70%">
+                    <tr><td colspan="4"></td></tr>
+                     <tr><td colspan="4"></td></tr>
+                     
+                    
+                   
+            
+        
+            </div>
+        </div>
+
+
+        </form>
+    </body>
+</html>
